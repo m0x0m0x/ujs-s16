@@ -31,7 +31,7 @@ body {
   display: flex;
 
   font-size: 2rem;
-  opacity: 0;
+  opacity: 1;
   transition: opacity 1s;
 }
 
@@ -74,6 +74,8 @@ body {
 
 .country__data {
   padding: 2.5rem 3.75rem 3rem 3.75rem;
+  background-color: #010e0a;
+  color: #34d399;
 }
 
 .country__name {
