@@ -19,7 +19,7 @@ request.addEventListener("load", function () {
 
   const html = `
         <article class="country">
-          <img class="country__img" src="${data.flags.png}" />
+          <img class="country__img" src="${data.flags.svg}" />
           <div class="country__data">
             <h3 class="country__name">${data.name.official}</h3>
             <h4 class="country__region">${data.region}</h4>
