@@ -15,30 +15,10 @@ body {
   background: hsla(254, 68%, 9%, 1);
 
   background: linear-gradient(
-    90deg,
-    hsla(254, 68%, 9%, 1) 0%,
-    hsla(269, 97%, 37%, 1) 33%,
-    hsla(320, 77%, 55%, 1) 66%,
-    hsla(316, 41%, 93%, 1) 100%
+    109.5deg,
+    rgb(13, 11, 136) 9.4%,
+    rgb(86, 255, 248) 78.4%
   );
-
-  background: -moz-linear-gradient(
-    90deg,
-    hsla(254, 68%, 9%, 1) 0%,
-    hsla(269, 97%, 37%, 1) 33%,
-    hsla(320, 77%, 55%, 1) 66%,
-    hsla(316, 41%, 93%, 1) 100%
-  );
-
-  background: -webkit-linear-gradient(
-    90deg,
-    hsla(254, 68%, 9%, 1) 0%,
-    hsla(269, 97%, 37%, 1) 33%,
-    hsla(320, 77%, 55%, 1) 66%,
-    hsla(316, 41%, 93%, 1) 100%
-  );
-
-  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0E0725", endColorstr="#5C03BC", GradientType=1 );
   min-height: 100vh;
 
   display: flex;
