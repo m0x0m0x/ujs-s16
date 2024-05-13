@@ -61,6 +61,6 @@ const getCountryAndNei = function (country) {
   });
 };
 
-getCountryAndNei("yemen");
-// getCountryData("japan");
-// getCountryData("syria");
+// getCountryAndNei("yemen");
+getCountryAndNei("qatar");
+// getCountryAndNei("yemen");
