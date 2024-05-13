@@ -11,5 +11,6 @@ const countriesContainer = document.querySelector(".countries");
 // request.open("GET", `https://restcountries.com/v3.1/name/${country}`);
 // request.send();
 
+// Using Promises
 const request = fetch("https://restcountries.com/v3.1/name/yemen");
 console.log(request);
