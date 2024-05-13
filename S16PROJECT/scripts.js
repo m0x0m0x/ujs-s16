@@ -38,5 +38,5 @@ const getCountryData = function (country) {
 };
 
 getCountryData("yemen");
-getCountryData("japan");
-getCountryData("syria");
+// getCountryData("japan");
+// getCountryData("syria");
