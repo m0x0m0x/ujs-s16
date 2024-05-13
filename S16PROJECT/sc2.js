@@ -56,7 +56,7 @@ const getCountryAndNei = function (country) {
       //   console.log(this.responseText);
       const [data2] = JSON.parse(this.responseText);
       console.log(data2);
-      renderCountry(data2);
+      renderCountry(data2, "neighbour");
     });
   });
 };
