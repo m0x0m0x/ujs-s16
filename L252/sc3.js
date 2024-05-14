@@ -14,3 +14,16 @@ const countriesContainer = document.querySelector(".countries");
 // Using Promises
 const request = fetch("https://restcountries.com/v3.1/name/yemen");
 console.log(request);
+
+const getCountryData = function (country) {
+  // Handling fulfiled response
+  fetch(`https://restcountries.com/v3.1/name/${country}`)
+    .then(function (response) {
+      console.log(response);
+      return response.json();
+    })
+    .then(function (data) {
+      console.log(data);
+    });
+};
+getCountryData("yemen");
