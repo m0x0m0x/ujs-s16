@@ -53,8 +53,21 @@ console.log(request);
 const getCountryData = function (country) {
   // Handling fulfiled response
   fetch(`https://restcountries.com/v3.1/name/${country}`)
+    //country1
     .then((response) => response.json())
-    .then((data) => renderCountry(data[0]))
+    .then((data) => {
+      renderCountry(data[0]);
+      const neig = data[0].borders[0];
+
+      if (!neig) return;
+
+      //   // Country neighbor - Country 2
+      return fetch(`https://restcountries.com/v3.1/alpha/${neig}`);
+    })
+    .then((response) => response.json())
+    .then((data) => renderCountry(data[0], "neighbour"))
     .then((error) => console.log(error));
 };
 getCountryData("yemen");
+
+// This section will be about chaining promises
