@@ -66,8 +66,15 @@ const getCountryData = function (country) {
     })
     .then((response) => response.json())
     .then((data) => renderCountry(data[0], "neighbour"))
-    .then((error) => console.log(error));
+    .catch((error) => {
+      console.error(error);
+      alert('Lick her pussy');
+    });
 };
-getCountryData("yemen");
+
+btn.addEventListener('click', function() {
+  getCountryData("yemen");
+})
+
 
 // This section will be about chaining promises
