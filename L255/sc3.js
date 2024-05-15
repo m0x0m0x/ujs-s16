@@ -117,10 +117,10 @@ const getCountryData = function (country) {
   )
     .then((data) => {
       renderCountry(data[0]);
-      // const neig = data[0].borders[0];
-      const neig = "rape3";
+      const neig = data[0].borders[0];
+      // const neig = "rape3";
 
-      if (!neig) return;
+      if (!neig) throw new Error("FuckNONeighbor🤬🤬");
 
       //   // Country neighbor - Country 2
       return getJSON(
@@ -140,6 +140,7 @@ const getCountryData = function (country) {
 
 btn.addEventListener("click", function () {
   getCountryData("yemen");
+  // getCountryData("australia");
 });
 
 // getCountryData("adadsdd");
