@@ -23,7 +23,12 @@ const renderCountry = function (data, className = "") {
           </article>
     `;
   countriesContainer.insertAdjacentHTML("beforeend", html);
-  countriesContainer.style.opacity = 1;
+  // countriesContainer.style.opacity = 1;
+};
+
+const renderError = function (msg) {
+  countriesContainer.insertAdjacentText("beforeend", msg);
+  // countriesContainer.style.opacity = 1;
 };
 
 //Old method
@@ -50,6 +55,7 @@ console.log(request);
 //       console.log(error);
 //     });
 // };
+
 const getCountryData = function (country) {
   // Handling fulfiled response
   fetch(`https://restcountries.com/v3.1/name/${country}`)
@@ -68,13 +74,15 @@ const getCountryData = function (country) {
     .then((data) => renderCountry(data[0], "neighbour"))
     .catch((error) => {
       console.error(error);
-      alert('Lick her pussy');
+      renderError(`FuckedUpBastard 🤬🤬 ${error.message}`);
+    })
+    .finally(() => {
+      countriesContainer.style.opacity = 1;
     });
 };
 
-btn.addEventListener('click', function() {
+btn.addEventListener("click", function () {
   getCountryData("yemen");
-})
+});
 
-
-// This section will be about chaining promises
+getCountryData("adadsdd");
