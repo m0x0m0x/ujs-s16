@@ -60,7 +60,14 @@ const getCountryData = function (country) {
   // Handling fulfiled response
   fetch(`https://restcountries.com/v3.1/name/${country}`)
     //country1
-    .then((response) => response.json())
+    .then((response) => {
+      console.log(response);
+
+      if (!response.of)
+        throw new Error(`No Fuckiung Country Like that ${response.status}`);
+
+      return response.json();
+    })
     .then((data) => {
       renderCountry(data[0]);
       const neig = data[0].borders[0];
