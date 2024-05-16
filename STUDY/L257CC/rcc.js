@@ -5,13 +5,17 @@ KodaPusyy =
 833177806482088831396x107013
 */
 
+// Need this fucker for ass fucking
 const gApi = "833177806482088831396x107013";
 
 const whereAmI = function (lat, lang) {
   fetch(`https://geocode.xyz/${lat},${lang}?geoit=json&auth=${gApi}`)
-    .then((res) => res.json())
+    .then((res) => {
+      if (!res.ok) throw new Error(`Fucked ${res.status}`);
+      console.log(res);
+      return res.json();
+    })
     .then((data) => {
-      console.log(data);
       console.log(
         `
       %cYou are in %c${data.city}, %c${data.country}
