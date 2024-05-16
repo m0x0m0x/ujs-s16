@@ -6,6 +6,7 @@ KodaPusyy =
 */
 
 // Old Code
+const countriesContainer = document.querySelector(".countries");
 const renderCountry = function (data, className = "") {
   const html = `
           <article class="country ${className}">
@@ -55,5 +56,5 @@ const whereAmI = function (lat, lang) {
 };
 
 whereAmI(52.508, 13.381);
-// whereAmI(10.037, 72.873);
-// whereAmI(22.58, 33.381);
+whereAmI(11.037, 7.873);
+whereAmI(121.58, 322.381);
