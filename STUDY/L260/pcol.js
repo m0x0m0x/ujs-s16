@@ -14,3 +14,4 @@ const customConsoleLog = (...args) => {
 };
 
 export { customConsoleLog as console };
+export { originalConsoleLog };
