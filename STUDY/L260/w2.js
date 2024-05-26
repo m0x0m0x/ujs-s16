@@ -60,4 +60,18 @@ lotteryPromise.then((res) => consoleO(res)).catch((err) => consoleO(err));
 
 // Promisify setTimeout into a wait function by promisyfying
 
-const wait = function (secs) {};
+// const wait = function (secs) {
+//   return new Promise(function (resolve) {
+//     setTimeout(resolve, secs * 1000);
+//   });
+// };
+
+const wait = (secs) =>
+  new Promise((resolve) => setTimeout(resolve, secs * 1000));
+
+wait(2)
+  .then(() => {
+    console.log("Wait 1 Seconds");
+    return wait(1);
+  })
+  .then(() => console.log("Waiting DOne"));
