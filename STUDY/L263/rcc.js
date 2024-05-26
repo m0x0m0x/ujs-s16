@@ -64,6 +64,19 @@ whereAmI(121.58, 322.381);
 
 // mainHead("L263 Work here");
 
+/*
+The async await function is syntactic sugar for this
+fetch(`https://restcountries.com/v3.1/name/${country}`)
+then(res => console.log(res))
+*/
+
 const whereAmI2 = async function (country) {
-  await fetch(`https://restcountries.com/v3.1/name/${data.country}`);
+  const res = await fetch(`https://restcountries.com/v3.1/name/${country}`);
+  console.log(res);
+  const data = await res.json();
+  console.log("rendering with async");
+  console.log(data);
+  renderCountry(data[0]);
 };
+whereAmI2("germany");
+console.log("1stBoob");
