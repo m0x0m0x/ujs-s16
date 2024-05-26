@@ -23,10 +23,22 @@ Promise.resolve("Res1").then((res) => console.log(res));
 
 // Another immediate promise resolution
 Promise.resolve("pussy").then((pussy) => {
-  for (let i = 0; i < 1000; i++) {
-    console.log(`Number Panty ${i}`);
-  }
+  // for (let i = 0; i < 1000; i++) {
+  //   console.log(`Number Panty ${i}`);
+  // }
   console.log(pussy);
 });
 
 console.log("Test End");
+
+// Continuing the work here
+mainHead("Actual Work Here");
+
+// Creating a lottery function
+
+const lotteryPromise = new Promise(function (resolve, reject) {
+  if (Math.random() >= 0.5) {
+    // Setting the promise as resolved with the resolve function
+    resolve();
+  }
+});
