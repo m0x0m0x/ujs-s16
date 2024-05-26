@@ -112,9 +112,9 @@ body {
   font-size: 2rem;
   padding: 2rem 5rem;
   border-radius: 0.7rem;
-  color: #b6fffa;
-  background-color: #1d2b53;
-  color: #b6fffa;
+  color: #B6FFFA;
+  background-color: #1D2B53;
+  color: #B6FFFA;
   cursor: pointer;
   transition: all 300ms;
 }
@@ -123,10 +123,11 @@ body {
   border-radius: 100px;
 }
 .btn-country:active {
-  transform: translateY(10px);
-  color: white;
-  font-size: 18px;
-  outline: 5px solid #f2527d;
+    transform: translateY(10px);
+    color: white;
+    font-size: 18px;
+    outline: 5px solid #f2527d;
+    
 }
 
 .images {
@@ -144,19 +145,4 @@ body {
   margin: 2rem;
   border: 3rem solid white;
   box-shadow: 0 2rem 5rem 1rem rgba(0, 0, 0, 0.1);
-}
-
-/* Getting the console messages in the HTML */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-}
-
-#console-output {
-  background-color: #070707;
-  color: #15f5ba;
-  padding: 10px;
-  border-radius: 5px;
-  margin-top: 20px;
-  font-size: 2rem;
 }

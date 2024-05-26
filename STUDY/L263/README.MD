@@ -1,3 +1,21 @@
-# L252
+# L257CC
 
-> This [`S16PROJECT`](../S16PROJECT/) which has been copied for doing this work , Note all the rest will follow this same procedure
+> This is the work for the coding challange
+
+# Website
+
+[`https://geocode.xyz/api`](https://geocode.xyz/api)
+
+- Use this website for getting the coordinates
+
+## Login Info
+
+- Fucker requires registration rapeandkill them all
+- Login - `traden.wahid@floodouts.com`
+- Pussy - `rmqqb5M&`
+
+### EatHerShit
+
+`833177806482088831396x107013`
+
+`( e.g., https://geocode.xyz/[request]&auth=833177806482088831396x107013 )`
