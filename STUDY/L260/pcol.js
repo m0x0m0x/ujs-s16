@@ -13,5 +13,5 @@ const customConsoleLog = (...args) => {
   consoleOutput.innerHTML += `${log}\n`;
 };
 
-export { customConsoleLog as console };
+export { customConsoleLog as consoleO };
 export { originalConsoleLog };
