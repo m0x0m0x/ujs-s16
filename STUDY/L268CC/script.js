@@ -65,4 +65,14 @@ const loadNPause = async function () {
     console.error(error);
   }
 };
-loadNPause();
+// loadNPause();
+
+//part 2
+
+const loadAll = async function (imgArr) {
+  try {
+    const imgs = imgArr.map(async (img) => await createImage(img));
+    console.log(imgs);
+  } catch (error) {}
+};
+loadAll(["img/1.jpg", "img/2.jpg", "img/3.jpg"]);

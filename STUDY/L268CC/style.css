@@ -25,7 +25,7 @@ body {
 }
 
 .images {
-  position: fixed; /* This will position the container relative to the viewport */
+  position: fixed; /*This will position the container relative to the viewport */
   top: 0; /* This will position the top of the container at the top of the viewport */
   left: 0; /* This will position the left of the container at the left of the viewport */
   width: 100%; /* This will set the width of the container to 100% of the viewport width */
