@@ -74,4 +74,18 @@ wait(2)
     console.log("Wait 1 Seconds");
     return wait(1);
   })
+  .then(() => {
+    console.log("Wait 2 Seconds");
+    return wait(1);
+  })
+  .then(() => {
+    console.log("Wait 3 Seconds");
+    return wait(1);
+  })
   .then(() => console.log("Waiting DOne"));
+
+// Create rejectec promise immediaely
+
+// Static Method on constructor
+Promise.resolve("🫦 Promise Rsolved").then((x) => console.log(x));
+Promise.reject(new Error("😡Promise Fucked")).catch((x) => console.log(x));
