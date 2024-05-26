@@ -23,21 +23,46 @@ const createImage = function (imgPath) {
   });
 };
 
-let curImg;
+// let curImg;
 
-createImage("img/1.png")
-  .then((img) => {
-    curImg = img;
-    console.log("Img1Loaded");
-    return wait(2);
-  })
-  .then(() => {
-    curImg.style.display = "none";
-    return createImage("img/2.jpg");
-  })
-  .then((img) => {
-    curImg = img;
-    console.log("Img2Loaded");
-    return wait(2);
-  })
-  .catch((err) => console.error(err));
+// createImage("img/1.jpg")
+//   .then((img) => {
+//     curImg = img;
+//     console.log("Img1Loaded");
+//     return wait(2);
+//   })
+//   .then(() => {
+//     curImg.style.display = "none";
+//     return createImage("img/2.jpg");
+//   })
+//   .then((img) => {
+//     curImg = img;
+//     console.log("Img2Loaded");
+//     return wait(2);
+//   })
+//   .catch((err) => console.error(err));
+
+const loadNPause = async function () {
+  try {
+    // Laodimage 1
+    let img = await createImage("img/1.jpg");
+    console.log("1️✅");
+    await wait(2);
+    img.style.display = "none";
+
+    // Laodimage 2
+    img = await createImage("img/2.jpg");
+    console.log("2✅✅");
+    await wait(2);
+    img.style.display = "none";
+
+    // Laodimage 2
+    img = await createImage("img/3.jpg");
+    console.log("3✅✅✅");
+    await wait(2);
+    img.style.display = "none";
+  } catch (error) {
+    console.error(error);
+  }
+};
+loadNPause();
