@@ -17,12 +17,12 @@ body {
 }
 
 /* ... other rules ... */
-.images img {
-  object-fit: cover; /* This will resize the image to cover the entire container, without stretching it */
-  width: 100%; /* This will set the width of the image to 100% of its container */
-  height: 100%; /* This will set the height of the image to 100% of its container */
-  transition: opacity 500ms; /* This will apply a transition effect to the opacity property */
-}
+/* .images img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  transition: opacity 500ms;
+} */
 
 .images {
   position: fixed; /*This will position the container relative to the viewport */
