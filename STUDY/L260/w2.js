@@ -47,7 +47,7 @@ const lotteryPromise = new Promise(function (resolve, reject) {
       // Setting the promise as resolved with the resolve function
       resolve("💸 Win");
     } else {
-      reject("😡 Lost");
+      reject(new Error("😡 Lost"));
     }
   }, 1000);
 });
@@ -57,3 +57,7 @@ lotteryPromise
   .then((res) => console.log(res))
   .catch((err) => console.error(err));
 lotteryPromise.then((res) => consoleO(res)).catch((err) => consoleO(err));
+
+// Promisify setTimeout into a wait function by promisyfying
+
+const wait = function (secs) {};
