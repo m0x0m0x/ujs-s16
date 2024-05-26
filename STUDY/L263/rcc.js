@@ -71,12 +71,25 @@ then(res => console.log(res))
 */
 
 const whereAmI2 = async function (country) {
-  const res = await fetch(`https://restcountries.com/v3.1/name/${country}`);
-  console.log(res);
-  const data = await res.json();
-  console.log("rendering with async");
-  console.log(data);
-  renderCountry(data[0]);
+  try {
+    const res = await fetch(`https://restcountries.com/v3.1/name/${country}`);
+    console.log(res);
+    const data = await res.json();
+    console.log("rendering with async");
+    console.log(data);
+    renderCountry(data[0]);
+  } catch (err) {
+    console.log("fucked");
+  }
 };
 whereAmI2("germany");
 console.log("1stBoob");
+
+// Try catch error
+// try {
+//   let y = 1;
+//   const x = 2;
+//   x = 3;
+// } catch (err) {
+//   console.error(err);
+// }
